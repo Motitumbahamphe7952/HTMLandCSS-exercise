@@ -1,0 +1,32 @@
+/* types of color codes in css
+    * Hexadecimal color
+      Format: #RRGGBB
+      Example: #FF5733 (a shade of orange) 
+      
+    * RGB Color or RGBa Color(a is for transparency)
+      Format: rgb(red, green, blue)
+      Example: rgb(255, 87, 51) (same shade of orange as above)
+   
+    * HSL Colors or HSLa Colors(a is for transparency)
+      Format: hsl(hue, saturation%, lightness%)
+      Example: hsl(14, 100%, 60%) (same shade of orange)  
+      
+    * Named Colors
+      Format: Using predefined color names
+      Example: orange
+      */
+/* 
+h1{
+    color: red ;
+}
+
+h1{
+    color: rgb(255, 87, 51);
+}
+h1{
+    color: hsl(14, 100%, 60%);
+} */
+h1{
+    color: #14f4ce;
+    /* 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f */
+}

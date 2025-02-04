@@ -1,0 +1,20 @@
+/* h1{
+    margin: 100px;
+} */
+
+#head1,#head2{
+    border: 2px solid #222;
+    /* width: 500px; */
+    display: inline;
+    /* a block level element can changed into inline using display property */
+}
+   
+
+#link1, #link2{
+    border: 2px solid #ff0000;
+    display: block;
+   /* height and width dont work in inline element */
+   /* margin: 100px; */
+    padding: 50px;
+}
+

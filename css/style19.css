@@ -1,0 +1,23 @@
+    /* by default, 1rem = 16px */
+    
+ html{
+    /* font-size: 10px;  */
+    font-size:62.5%;
+    /* 16px -->100% */
+    /* 10px -->100/16*10 */
+  }
+ 
+/* 10px = 1rem */
+
+/* :root{
+    font-size: 10px;
+} */
+.box11{
+    font-size: 2rem; /* 2rem = 20px */
+}
+.text-content{
+    font-size: 3rem; /* 3rem = 30px */
+    border: 1rem solid red;
+    margin: 0.5rem;
+    padding: 4.5rem;
+}

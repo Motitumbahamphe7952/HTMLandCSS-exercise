@@ -1,0 +1,23 @@
+
+ /* css for viewportunits.html */
+.box11{
+
+
+    /* vh,vw */
+    height: 50vw;  /* 50% of vw */
+    width: 50vh;   /*  50% of vh */
+
+    height: 80vmax; /* 50% of vh or vw depending on which is max */
+    width: 50vmin; /* 50% of vh or vw depending on which is min */
+    background-color: aquamarine;
+
+
+}
+
+ /* vw will take the say 20vw will take the 20% of the viewport or screen */
+
+ /* while 50% take the 50 percentage space of parent */
+
+ /* 
+% is relative to the parent element's size.
+vw is relative to the viewport's width. */

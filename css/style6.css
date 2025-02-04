@@ -1,0 +1,50 @@
+header{
+    background-color: #f0ebeb;
+}
+
+section.my-article{
+    background-color: #f2e9e9;
+}
+
+/* 
+Universal selector (*) in CSS selects all elements on a page 
+*{
+    color: blue;
+} */
+
+
+/* (Descendant selectors) in CSS target elements that are nested within a specified ancestor element, regardless of the depth of nesting */
+/*  it selects all <p> elements that are inside a <header>  */
+header p{
+    color: red;
+}
+
+li a{
+    color: red
+}
+
+
+
+/* section.my-article h2{
+    color: green;
+} */
+
+/* (Child selectors) in CSS target elements that are the immediate children of a specified ancestor element */
+section.my-article > h2{
+    color: green;
+}
+
+
+
+/* (Adjacent sibling selectors) in CSS target an element that is immediately preceded by a certain element */
+h2+p{
+    color: orange;
+}
+
+ul+p{
+    color: green;
+}
+
+/* section.my-article h2+p{
+    color: blue;
+} */

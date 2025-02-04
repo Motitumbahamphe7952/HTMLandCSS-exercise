@@ -1,0 +1,266 @@
+/* css for css.html */
+h1.css{
+    color: red;
+    background-color: wheat;
+    border: 2px solid black;
+
+}
+
+
+/* css for boxsizing.html */
+hr{
+    width: 500px;
+    margin-left: 0;
+    border: 0.5px dashed black;
+}
+
+.box2{
+    width: 500px;
+    background-color: lightcoral;
+    border: 10px solid red;
+    padding: 50px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+/* by default, box-sizing: content-box; */
+/* without box-sizing, the padding and border would be added to the specified width, resulting in a larger total width. */
+
+/* 
+With box-sizing: border-box; applied in the following example, the total width of .box2 will remain 500px, including the content, padding, and border */
+
+
+.box1{
+    width: 500px;
+    background-color: tomato;
+    border: 10px solid red;
+    padding: 50px;
+}
+
+/* css for cssreset.html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+#cssreset h1{
+    margin: 10px;
+}
+#cssreset p{
+    margin: 8px;
+    padding:8px;
+}
+
+
+
+/* css for cssinheritence.html */
+body .cssinheritence{
+    color: red;    
+}
+/* by default, container1 and container2 will inherit the red color */
+.cssinheritence .container1{
+    color: green;
+}
+
+.cssinheritence .container2{
+    color: blue;
+}
+.cssinheritence h1{
+    color: orange;
+}
+.cssinheritence a{
+    color: brown;
+}
+
+
+/* css for textalign.html */
+.textalign h2{
+    background-color: lightskyblue;
+    width: 500px;
+    text-align: right;
+    padding-right: 10px;
+}
+.textalign a{
+    display: inline-block;
+    width: 500px;
+    background: lightcoral;
+    text-align: center;
+    text-align: left;
+}
+
+/* css for fontweight.html */
+.fontweight p{
+    font-family:"Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+   
+}
+
+.fontweight h1{
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline dashed red;
+}
+
+
+/* css for pseudoclass.html */
+
+
+/* link, visited, hover, active */
+/* These pseudo-classes have an inherent order of precedence, which is commonly referred to as LVHA (Link, Visited, Hover, Active). */
+.pseudoclass a:link{
+    color: orange;
+}
+
+.pseudoclass a:visited{
+    color: red;
+}
+
+.pseudoclass a:hover{
+    color: green;
+}
+
+.pseudoclass a:active{
+    color: black;
+}
+
+.pseudoclass p:hover{
+    color: green;
+}
+
+
+
+
+/* css for pseudoclasses2.html */
+.pseudoclasses2 input:focus{
+ padding: 5px;   
+ outline: none;
+ border: 1px solid green;
+}
+.pseudoclasses2 input:required{
+    color: red;
+}
+.pseudoclasses2 input[type ="submit"]:hover{
+    padding: 2px;
+    color: lightcoral;
+    background: lightblue;
+    outline: none;
+    border: 1px solid green;
+    border-radius: 3px;
+}
+ 
+/* css for firstchildfirstoftype.html */
+
+/* .firstchildfirstoftype p:first-child{
+    color: red;
+} */
+
+.firstchildfirstoftype p:first-of-type{
+    color:red;
+}
+
+
+
+/* css for lastchildlastoftype.html */
+/* .lastchildlastoftype p:last-child{
+    color: green;
+} */
+
+.lastchildlastoftype p:last-of-type{
+    color: green;
+}
+
+
+
+/* css for nthchildnthoftype.html */
+    /* p:nth-child(2) means p element which is second child of its parent while p:nth-child(2n) means p elements which even numbered child and p:nth-child(2n+1) is for odd numbered child*/
+/* .nthchildnthoftype p:nth-child(2n+1){
+    color: blue;
+} */
+
+.nthchildnthoftype p:nth-of-type(2){
+    color: red;
+}
+
+
+
+/* css for root,not,emptypseudo.html */
+/* .rootnotemptypseudo :not(.fancy): Selects all descendants of .rootnotemptypseudo that do not have the class fancy
+.rootnotemptypseudo:not(.fancy): Selects elements with the class .rootnotemptypseudo that do not also have the class .fancy. */
+ /* .rootnotemptypseudo :not(.fancy){
+    color: blue;
+    background-color: #ddd;
+} */
+ .rootnotemptypseudo :empty{
+    background: #222;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+ }
+/* root is same as html tag but it has more specificity */
+ /* :root{
+    background: #333;
+    color: #eee;
+ } */
+
+
+ /* css for pseudoelements */
+ .pseudoelements p::first-letter{
+    font-size: 32px;
+ }
+ .pseudoelements ::selection{
+    background: black;
+    color: white;
+ }
+
+
+ /* css fpr pseudoelemets2 */
+ .pseudoelements2 .cool::before{
+    display: block;
+    content: 'hello  ';
+    color: greenyellow;
+    border: 1px dotted black;
+    margin-bottom: 5px;
+ }
+
+ .pseudoelements2 .cool::after{
+    display: block;
+    content: 'hello  ';
+    color: greenyellow;
+    border: 1px dotted black;
+    margin-bottom: 5px;
+ }
+
+ .pseudoelements2 .main-heading::before{
+ 
+    content: 'hello  ';
+    color: red;
+ }
+ /* pseudoelements cannot be used with img,br,iframe,input */
+
+
+ /* css for absoluteunits */
+
+ .absoluteunits p{
+    /* font-size: 32px;
+    font-size: 12px; */
+    font-size: 96px;
+
+    /* 1inch == 96px */
+    font-size: 1in;
+
+    /* 1in == 2.54cm */
+    font-size: 2.54cm;
+
+    /* 1px= 0.75pt
+    16px = 0.75*16 = 12pt */
+    font-size: 12pt;
+    border: 4pt solid red;
+
+ }
+

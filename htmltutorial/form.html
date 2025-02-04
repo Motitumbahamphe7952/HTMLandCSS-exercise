@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="./pages/thanku.html" method='get'>
+        <!-- GET and POST Methods in HTML:
+        GET: Retrieves data from the server, appending the data to the URL as query parameters. It's ideal for fetching data and allows the data to be visible in the URL, but it has a size limit.
+
+        POST: Sends data to the server for processing, including the data in the request body. It's suitable for submitting forms, with no size limit on the data, and keeps the data hidden from the URL. -->
+
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" name="username" placeholder="username" required>
+        <!-- 
+            The placeholder attribute in HTML is used within form input elements to provide a short hint that describes the expected value of the input field.  -->
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br><br>
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" placeholder=" your email" required>
+        <!-- a "required" attribute is used to specify that a certain input field must be filled out before submitting a form -->
+        <br><br>
+        <p>Select your gender:</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+         <input type="radio" name="gender" id="female">
+         <label for="other">Other</label>
+         <input type="radio" name="gender" id="other">
+         <br><br>
+
+         <label for="age-group">Select your age group:</label><br>
+         <select  id="age-group">
+            <option value="5-10">5-10</option>
+            <option value="11-21">11-21</option>
+            <option value="21-50" selected>21-50</option> 
+            <!-- selected attribute is used to set and option as default -->
+            <option value="50+">50+</option>
+         </select><br><br>
+         <label for="textarea">Write about yourself</label><br>
+         <textarea name="textarea" id="textarea" rows="10" cols="60"></textarea>
+         <br>
+         Pick color:<input type="color" name="color" id="mycolor">
+         <br><br>
+         Date: <input type="date" name="date" id="Date">
+         <br><br>
+         Your file: <input type="file" name="file" id="Myfile">
+         <!-- shortcut (input:file) -->
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Sign In">
+
+
+
+    </form>
+</body>
+</html>

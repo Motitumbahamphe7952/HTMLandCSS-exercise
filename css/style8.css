@@ -1,0 +1,39 @@
+/* class selector > element selector */
+
+/* Specificity in CSS determines which styles are applied to an element when there are conflicting rules. It is calculated based on the types of selectors used: inline styles have the highest specificity, followed by IDs, classes/attributes/pseudo-classes, and finally element/type selectors. The more specific a selector, the more precedence it has over less specific ones.
+
+(inline styles > IDs > classes/attributes/pseudo-classes > element/type selectors)
+ */
+ 
+
+h1{
+    color: green;
+}
+
+
+/* If  (!important) or declaration override is not used and the rules have the same level of specificity, the rule that is declared last in the CSS file will take effect. This follows the cascading order principle in CSS, where the most recently declared rule with equal specificity will be applied.
+ */
+/* .heading{
+    color: magenta;
+}
+.h1class{
+    color: red;
+} */
+
+
+/* Declaration Override---When a style declaration includes !important, that specific rule will take precedence over all other conflicting rules, regardless of the normal specificity hierarchy. */
+/* #h1id{
+    color: blue !important;
+} */
+
+
+
+h1.heading{
+    color: magenta;
+}
+/* 0,0,1,1 ---->11 specificity */
+.h1class{
+    color: red;
+}
+/* 0,0,1,0---->10 specificity */
+

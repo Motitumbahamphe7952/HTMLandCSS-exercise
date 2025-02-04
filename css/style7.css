@@ -1,0 +1,43 @@
+/* input[type="text"] {
+ color: red;
+ background-color: yellow;
+} */
+
+input[type="password"]{
+    color: blue;
+    background-color: lightblue;
+}
+
+input[type="button"]{
+   background-color: wheat;
+   color: tomato;
+}
+
+/* 
+a[href="https://google.com"]{
+    color: green;
+} */
+
+
+/* In CSS, the `*=` operator is used in attribute selectors to match elements whose specified attribute contains a given substring. For example, `[attribute*="value"]` will select all elements where the attribute's value contains "value" as a part of its content. */
+/* a[href *="google"]{
+    color: violet;
+} */
+
+
+
+/* In CSS, the `^=` operator is used in attribute selectors to match elements whose specified attribute value begins with a given value. For example, `[attribute^="value"]` will select all elements where the attribute's value starts with "value". */
+/* a[href ^="https"]{
+    color: green;
+} */
+
+
+/* In CSS, the `$=` operator is used in attribute selectors to match elements whose specified attribute value ends with a given value. For example, `[attribute$="value"]` will select all elements where the attribute's value ends with "value". */
+a[href $=".com"]{
+    color: greenyellow;
+}
+
+input[type ^= "t"]{
+    color: red;
+    background-color: forestgreen;
+}

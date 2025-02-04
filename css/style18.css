@@ -1,0 +1,17 @@
+
+ /* css for relativeunits */
+ .relativeunits div{
+    border: 2px solid red;
+    font-size: 20px;
+    width: 50%;
+    /* so percentage or relative units have relations with its parents. since div is a parent of p ,100% of div is 10 so font-size of p will also be 10px*/
+ }
+ .relativeunits  p{
+    border: 1px solid green;
+    font-size: 100%;
+    width: 50%;
+    margin:  10px auto;
+    background: lightblue;
+    text-align: center;
+    /* by defualt, browser gives 16px to the fonts so 100% of font is 16px as well */
+ }

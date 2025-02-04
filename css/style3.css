@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Main-content{
+    background-color: blueviolet;
+}
+.Main-section{
+   background-color: brown;
+}
+p{
+    color: yellowgreen;
+}
